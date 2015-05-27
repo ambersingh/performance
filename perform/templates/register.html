@@ -1,0 +1,26 @@
+{% extends 'index.html' %}
+
+    {%block title %} Register {% endblock %}
+        
+
+    {% block body %}
+    <div class="well">
+        <h3>Register Here </h3>
+
+      {% if registered %}
+      <strong>thank you for registering!</strong>
+      <a href="http://127.0.0.1:8000/perform/login/">Click here to  Login</a>    <br />
+        {% else %}
+
+        <form id="user_form" method="post" action="/perform/register/"
+                enctype="multipart/form-data" role="form" class="clearfix">
+
+            {% csrf_token %}
+
+            <h4>{{ user_form.as_p }}</h4>
+            <input type="submit" name="submit" value="Register" id="search"/>
+        </form>
+        {% endif %}
+    </div>
+
+    {% endblock %}

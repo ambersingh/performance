@@ -1,0 +1,63 @@
+{% extends 'index.html' %}
+
+{% block title %}  view_performance {% endblock %}
+{% block body %}
+
+<div class="container">
+  
+  <h3> Performance table</h3><br/>
+  <table class="table table-hover table-bordered">
+    <thead>
+      <tr>
+        <th >#</th>
+        <th >Parameter</th>
+        <th >Weightage</th>
+        <th >Score</th>
+        <th >Month</th>
+      </tr>
+    </thead>
+    <tbody>
+  {% comment %}
+    {% for x in range(1,4) %}
+      <tr>
+        <td>{{ Employee.id[x]}}</td>
+        <td>{{Parameter.paraname[x]}}</td>
+        <td>{{Employee_Para.weightage[x]}}</td>
+        <td>{{Employee_Para.score[x]}}</td>
+        <td>{{Employee_Para.pub_month[x]}}</td>
+      </tr>
+    {% endfor %}
+      <tr>
+  {% endcomment %}
+        <td>2</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+{% endblock %}

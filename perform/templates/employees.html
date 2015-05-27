@@ -1,0 +1,15 @@
+{% extends 'index.html' %}
+{%block title %}  Employees {% endblock %}
+{% block body %}
+
+<p>this is the list of employees</p>
+{% comment %}
+{% for x in range(1,4) %}
+      <tr>
+        <td>{{ Employee.id[x]}}</td>
+        <td>{{Parameter.paraname[x]}}</td>
+      </tr>
+    {% endfor %}
+   {% endcomment %}
+  <p> {{ Employee.objects.all }}</p>
+{% endblock %}
