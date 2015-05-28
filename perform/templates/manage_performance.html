@@ -1,21 +1,17 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-</head>
-<body>
+{% extends 'index.html' %}
+
+{% block title%} Manage Perfromance {% endblock %}
+
+
+{% block body %}
 
 <div class="container">
   
-  <h3> Performance table</h3><br/>
+  <h3>Managing the Performance </h3><br/>
   <table class="table table-hover table-bordered">
     <thead>
       <tr>
         <th>#</th>
-        <th>Name</th>
         <th>Parameter</th>
         <th>Weightage</th>
         <th>Score</th>
@@ -25,31 +21,32 @@
     <tbody>
       <tr>
         <td>1</td>
-        <td>ramesh</td>
         <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td><input type="number" size="3" min="0" max="100"></td>
+        <td><input type="number" size="3" min="0" max="100"></td>
+
+        <td><input></td>
       </tr>
       <tr>
         <td>2</td>
-        <td>shahid</td>
         <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td><input type="number" size="3" min="0" max="100"></td>
+        <td><input type="number" size="3" min="0" max="100"></td>
+
+        <td><input></td>
       </tr>
       <tr>
         <td>3</td>
-        <td>John</td>
         <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td><input type="number" size="3" min="0" max="100"></td>
+        <td><input type="number" size="3" min="0" max="100"></td>
+
+        <td><input></td>
       </tr>
     </tbody>
   </table>
 </div>
 
-</body>
+
+{% endblock %}
 </html>
